@@ -1,7 +1,8 @@
 # RailMan React Frontend
-    <h1>
+<p>&nbsp;</p>
+    <h2>
         Order Food in Trains Online
-    </h1>
+    </h2>
     <p>
         Gone are the days when you had to rely on pantry car food to pacify your hunger. Now, you can order food in trains online and choose among multiple food options while travelling.
         We work with full diligence to deliver fresh and delicious food to passengers at their seat.
