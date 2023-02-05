@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# RailMan React Frontend
+    <h1>
+        Order Food in Trains Online
+    </h1>
+    <p>
+        Gone are the days when you had to rely on pantry car food to pacify your hunger. Now, you can order food in trains online and choose among multiple food options while travelling.
+        We work with full diligence to deliver fresh and delicious food to passengers at their seat.
+        We offer a variety of cuisines to choose from including North Indian, Chinese, Italian, Jain food, Mughlai, South Indian, and Continental. Apart from these options, regional foods are also on the menu, so that you won’t miss your home delicacies while travelling.
+    </p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of contents
 
-## Available Scripts
+<!-- toc -->
+- [Pre requisites](#pre-requisites)
+- [Getting started](#getting-started)
+<!-- tocstop -->
+## Pre requisites
 
-In the project directory, you can run:
+Install JSON Server 
 
-### `npm start`
+```bash
+ cd "railman-app\"
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+npm install -g json-server
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Start JSON Server
 
-### `npm test`
+```bash
+ json-server --watch .\src\components\db.json --port 8000 --routes .\src\components\routes.json
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[For More Info on JSON Server](https://github.com/typicode/json-server)
 
-### `npm run build`
+## Getting started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Install railman app
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+cd "railmam-app\"
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Start the Railman App
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm start
+```

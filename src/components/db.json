@@ -1,0 +1,271 @@
+{
+  "login": [
+    {
+      "name": "name",
+      "email": "name@email.com",
+      "password": "1234qwer@#",
+      "phone": "1234567890",
+      "address": "address",
+      "city": "city",
+      "role": "customer",
+      "pincode": "123456",
+      "id": 1
+    },
+    {
+      "name": "dominos",
+      "email": "dominos@email.com",
+      "password": "qwer123@#",
+      "phone": "1234567890",
+      "address": "address",
+      "city": "city",
+      "role": "restaurant",
+      "pincode": "123456",
+      "id": 2
+    }
+  ],
+  "r-orders": [
+    {
+      "id": 1,
+      "customerName": "John Doe",
+      "orderItems": [
+        "Pizza",
+        "Burger"
+      ],
+      "total": 125,
+      "status": "accepted"
+    },
+    {
+      "id": 2,
+      "customerName": "John Dan",
+      "orderItems": [
+        "Pasta",
+        "Burger"
+      ],
+      "total": 325,
+      "status": "rejected"
+    },
+    {
+      "id": 3,
+      "customerName": "Jane Dan",
+      "orderItems": [
+        "Soup",
+        "Salad"
+      ],
+      "total": 225,
+      "status": "pending"
+    },
+    {
+      "id": 4,
+      "customerName": "Jane Doe",
+      "orderItems": [
+        "Soup",
+        "Salad"
+      ],
+      "total": 225,
+      "status": "awaiting_delivery"
+    }
+  ],
+  "c-orders": [
+    {
+      "id": 1,
+      "restaurant": "KFC",
+      "total": 125,
+      "status": "accepted"
+    },
+    {
+      "id": 2,
+      "restaurant": "BurgerKing",
+      "total": 325,
+      "status": "rejected"
+    },
+    {
+      "id": 3,
+      "restaurant": "McDonald",
+      "total": 225,
+      "status": "pending"
+    },
+    {
+      "id": 4,
+      "restaurant": "PizzaHut",
+      "total": 225,
+      "status": "awaiting_delivery"
+    },
+    {
+      "id": 5,
+      "restaurant": "KFC",
+      "total": 22,
+      "status": "accepted"
+    },
+    {
+      "id": 6,
+      "restaurant": "McDonald",
+      "total": 35.25,
+      "status": "rejected"
+    },
+    {
+      "id": 7,
+      "restaurant": "Subway",
+      "total": 38.5,
+      "status": "delivered"
+    },
+    {
+      "id": 8,
+      "restaurant": "BurgerKing",
+      "total": 27.5,
+      "status": "accepted"
+    },
+    {
+      "id": 9,
+      "restaurant": "BurgerKing",
+      "total": 27.5,
+      "status": "accepted"
+    },
+    {
+      "id": 10,
+      "restaurant": "KFC",
+      "total": 22,
+      "status": "accepted"
+    },
+    {
+      "id": 11,
+      "restaurant": "Subway",
+      "total": 8,
+      "status": "accepted"
+    },
+    {
+      "id": 12,
+      "restaurant": "PizzaHut",
+      "total": 20,
+      "status": "accepted"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": 1,
+      "pnr": "12345",
+      "location": "pune",
+      "name": "KFC",
+      "cuisine": [],
+      "rating": 3.4
+    },
+    {
+      "id": 2,
+      "pnr": "12345",
+      "location": "pune",
+      "name": "McDonald",
+      "cuisine": [],
+      "rating": 3.6
+    },
+    {
+      "id": 3,
+      "pnr": "12345",
+      "location": "pune",
+      "name": "PizzaHut",
+      "cuisine": [],
+      "rating": 4.2
+    },
+    {
+      "id": 4,
+      "pnr": "12345",
+      "location": "pune",
+      "name": "BurgerKing",
+      "cuisine": [],
+      "rating": 4.5
+    },
+    {
+      "id": 5,
+      "pnr": "12345",
+      "location": "pune",
+      "name": "Subway",
+      "cuisine": [],
+      "rating": 4
+    }
+  ],
+  "menuItems": {
+    "McDonald": [
+      {
+        "id": 1,
+        "name": "Ice Cream",
+        "price": 20.5
+      },
+      {
+        "id": 2,
+        "name": "Big Mac",
+        "price": 14.75
+      },
+      {
+        "id": 3,
+        "name": "French Fries",
+        "price": 7.25
+      }
+    ],
+    "BurgerKing": [
+      {
+        "id": 4,
+        "name": "Whopper",
+        "price": 18
+      },
+      {
+        "id": 5,
+        "name": "Onion Rings",
+        "price": 9.5
+      },
+      {
+        "id": 6,
+        "name": "Chicken Sandwich",
+        "price": 16.25
+      }
+    ],
+    "KFC": [
+      {
+        "id": 7,
+        "name": "Fried Chicken",
+        "price": 15.25
+      },
+      {
+        "id": 8,
+        "name": "Mashed Potatoes",
+        "price": 6.75
+      },
+      {
+        "id": 9,
+        "name": "Biscuits",
+        "price": 4
+      }
+    ],
+    "Subway": [
+      {
+        "id": 10,
+        "name": "Meatball Sub",
+        "price": 12.5
+      },
+      {
+        "id": 11,
+        "name": "Veggie Delite",
+        "price": 9
+      },
+      {
+        "id": 12,
+        "name": "Soup of the Day",
+        "price": 8
+      }
+    ],
+    "PizzaHut": [
+      {
+        "id": 13,
+        "name": "Pepperoni Pizza",
+        "price": 22
+      },
+      {
+        "id": 14,
+        "name": "Garlic Knots",
+        "price": 7
+      },
+      {
+        "id": 15,
+        "name": "Wings",
+        "price": 20
+      }
+    ]
+  }
+}
