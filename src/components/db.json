@@ -100,7 +100,7 @@
         "Biscuits",
         "Fried Chicken"
       ],
-      "status": "accepted"
+      "status": "pending"
     },
     {
       "id": 8,
@@ -123,7 +123,7 @@
         "Veggie Delite",
         "Soup of the Day"
       ],
-      "status": "accepted"
+      "status": "awaiting_delivery"
     }
   ],
   "restaurants": [
