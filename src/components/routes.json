@@ -1,9 +1,7 @@
 {
-    "/api/r-orders": "/r-orders",
-    "/api/r-orders/:id": "/r-orders/:id",
-    "/api/r-orders?id=:id": "/r-orders?id=:id",
-    "/api/c-orders": "/c-orders",
-    "/api/c-orders/:id": "/c-orders/:id",
+    "/api/orders": "/orders",
+    "/api/orders/:id": "/orders/:id",
+    "/api/orders?id=:id": "/orders?id=:id",
     "/api/restaurants": "/restaurants",
     "/api/restaurants?pnr=:pnr": "/restaurants?pnr=:pnr",
     "/api/restaurants?location=:location": "/restaurants?location=:location",

@@ -10,7 +10,7 @@ class OrderDetailsPage extends Component {
     const { orderId } = this.props.match.params;
     //fetch order details based on orderId
     //set order details to state
-    fetch('http://localhost:8000/api/r-orders/' + orderId)
+    fetch('http://localhost:8000/api/orders/' + orderId)
       .then(response => response.json())
       .then(order => {
         this.setState({ order });
@@ -22,7 +22,7 @@ class OrderDetailsPage extends Component {
         const { order } = this.state;
         const updatedOrder = {...order, status: 'accepted'};
         // send a PATCH request to the server to update the order status
-        await axios.patch(`http://localhost:8000/api/r-orders/${order.id}`, updatedOrder);
+        await axios.patch(`http://localhost:8000/api/orders/${order.id}`, updatedOrder);
         // update the local state with the updated order details
         this.setState({ order: updatedOrder });
     } catch (error) {
@@ -36,7 +36,7 @@ class OrderDetailsPage extends Component {
         const { order } = this.state;
         const updatedOrder = {...order, status: 'rejected'};
         // send a PATCH request to the server to update the order status
-        await axios.patch(`http://localhost:8000/api/r-orders/${order.id}`, updatedOrder);
+        await axios.patch(`http://localhost:8000/api/orders/${order.id}`, updatedOrder);
         // update the local state with the updated order details
         this.setState({ order: updatedOrder });
     } catch (error) {

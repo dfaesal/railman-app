@@ -13,7 +13,7 @@ class CustomerDashboard extends React.Component {
     }
     componentDidMount() {
       // Make API call to fetch active orders
-      fetch("http://localhost:8000/api/c-orders")
+      fetch("http://localhost:8000/api/orders")
         .then((res) => res.json())
         .then((data) => {
           this.setState({ activeOrders: data });

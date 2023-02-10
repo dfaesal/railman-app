@@ -15,7 +15,7 @@ class RestaurantDashboard extends React.Component {
   componentDidMount() {
     // Fetch active order details from the server
     // and update the state
-    fetch('http://localhost:8000/api/r-orders')
+    fetch('http://localhost:8000/api/orders')
       .then(response => response.json())
       .then(activeOrders => {
         this.setState({ activeOrders });

@@ -8,7 +8,7 @@ class PreviousOrders extends Component {
 
   componentDidMount() {
     axios
-      .get('http://localhost:8000/api/c-orders')
+      .get('http://localhost:8000/api/orders')
       .then(res => {
         this.setState({ orders: res.data });
       })

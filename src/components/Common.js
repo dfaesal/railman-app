@@ -2,7 +2,7 @@
 export const getUser = () => {
     const userStr= [];
     userStr.id = sessionStorage.getItem('id');
-    userStr.name = sessionStorage.getItem('user');
+    userStr.name = JSON.parse(sessionStorage.getItem('user'));
     return userStr;
 }
 
@@ -21,5 +21,5 @@ export const removeUserSession = () => {
 // set the token and user from the session storage
 export const setUserSession = (id, name, address) => {
     sessionStorage.setItem('id', id);
-    sessionStorage.setItem('user', JSON.stringify(name));
+    sessionStorage.setItem('user', name);
 }

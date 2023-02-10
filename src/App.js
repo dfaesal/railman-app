@@ -26,12 +26,10 @@ class App extends React.Component {
               <Route path="/time" exact component={UnderConstruction} />
               <Route path="/availability" exact component={UnderConstruction} />
               <Route path="/active-order/:orderId" component={OrderDetailsPage} />
-              <Route exact path="/searchR" component={RestaurantSearch} 
+              <Route exact path="/restaurants" component={RestaurantSearch} 
               />
               <Route path="/previous-orders" component={PreviousOrders} />
-              <Route
-                exact
-                path="/restaurant/:name/menu"
+              <Route exact path="/restaurant/:name/menu"
                 render={(props) => (
                   <Order
                     {...props}

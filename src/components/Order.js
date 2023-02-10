@@ -2,6 +2,7 @@ import React from "react";
 import Menu from "./Menu.js";
 import Payment from "./Payment.js"
 import axios from "axios";
+import { getUser } from "./Common.js";
 
 class Order extends React.Component {
   constructor(props) {
@@ -14,7 +15,7 @@ class Order extends React.Component {
     };
   }
   componentDidMount() {
-    axios.get("http://localhost:8000/api/c-orders")
+    axios.get("http://localhost:8000/api/orders")
       .then((response) => {
         this.setState({ lastIndex: response.data.length + 1 });
       })
@@ -34,13 +35,16 @@ class Order extends React.Component {
     console.log(paymentInfo);
     const url = window.location.href.split("/");
     const restaurant = url[url.length - 2];
-    const orderItems = {
+    const orderItems = this.state.orderItems.map(item => item.name);
+    const orders = {
       "id": this.state.lastIndex,
+      "customerName": getUser().name,
       "restaurant": restaurant,
       "total": this.state.orderTotal,
+      "orderItems": orderItems,
       "status": "accepted"
     };
-    axios.post("http://localhost:8000/api/c-orders", orderItems)
+    axios.post("http://localhost:8000/api/orders", orders)
       .then((response) => {
         console.log(response)
       })

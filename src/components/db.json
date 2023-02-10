@@ -23,10 +23,11 @@
       "id": 2
     }
   ],
-  "r-orders": [
+  "orders": [
     {
       "id": 1,
       "customerName": "John Doe",
+      "restaurant": "PizzaHut",
       "orderItems": [
         "Pizza",
         "Burger"
@@ -37,6 +38,7 @@
     {
       "id": 2,
       "customerName": "John Dan",
+      "restaurant": "McDonald",
       "orderItems": [
         "Pasta",
         "Burger"
@@ -47,6 +49,7 @@
     {
       "id": 3,
       "customerName": "Jane Dan",
+      "restaurant": "BurgerKing",
       "orderItems": [
         "Soup",
         "Salad"
@@ -57,85 +60,69 @@
     {
       "id": 4,
       "customerName": "Jane Doe",
+      "restaurant": "KFC",
       "orderItems": [
         "Soup",
         "Salad"
       ],
       "total": 225,
       "status": "awaiting_delivery"
-    }
-  ],
-  "c-orders": [
-    {
-      "id": 1,
-      "restaurant": "KFC",
-      "total": 125,
-      "status": "accepted"
-    },
-    {
-      "id": 2,
-      "restaurant": "BurgerKing",
-      "total": 325,
-      "status": "rejected"
-    },
-    {
-      "id": 3,
-      "restaurant": "McDonald",
-      "total": 225,
-      "status": "pending"
-    },
-    {
-      "id": 4,
-      "restaurant": "PizzaHut",
-      "total": 225,
-      "status": "awaiting_delivery"
     },
     {
       "id": 5,
+      "customerName": "name",
       "restaurant": "KFC",
-      "total": 22,
-      "status": "accepted"
-    },
-    {
-      "id": 6,
-      "restaurant": "McDonald",
-      "total": 35.25,
+      "total": 15.25,
+      "orderItems": [
+        "Fried Chicken"
+      ],
       "status": "rejected"
     },
     {
+      "id": 6,
+      "customerName": "name",
+      "restaurant": "McDonald",
+      "total": 42.5,
+      "orderItems": [
+        "Big Mac",
+        "French Fries",
+        "Ice Cream"
+      ],
+      "status": "accepted"
+    },
+    {
       "id": 7,
-      "restaurant": "Subway",
-      "total": 38.5,
-      "status": "delivered"
+      "customerName": "name",
+      "restaurant": "KFC",
+      "total": 26,
+      "orderItems": [
+        "Mashed Potatoes",
+        "Biscuits",
+        "Fried Chicken"
+      ],
+      "status": "accepted"
     },
     {
       "id": 8,
+      "customerName": "name",
       "restaurant": "BurgerKing",
-      "total": 27.5,
+      "total": 34.25,
+      "orderItems": [
+        "Whopper",
+        "Chicken Sandwich"
+      ],
       "status": "accepted"
     },
     {
       "id": 9,
-      "restaurant": "BurgerKing",
-      "total": 27.5,
-      "status": "accepted"
-    },
-    {
-      "id": 10,
-      "restaurant": "KFC",
-      "total": 22,
-      "status": "accepted"
-    },
-    {
-      "id": 11,
+      "customerName": "name",
       "restaurant": "Subway",
-      "total": 8,
-      "status": "accepted"
-    },
-    {
-      "id": 12,
-      "restaurant": "PizzaHut",
-      "total": 20,
+      "total": 29.5,
+      "orderItems": [
+        "Meatball Sub",
+        "Veggie Delite",
+        "Soup of the Day"
+      ],
       "status": "accepted"
     }
   ],

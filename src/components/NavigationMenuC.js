@@ -13,7 +13,7 @@ class NavigationMenuC extends React.Component {
       <header>
       <nav className="user-menu">
         <ul>
-          <li><Link to="/searchR">Search for Available Restaurant</Link></li>
+          <li><Link to="/restaurants">Search for Available Restaurant</Link></li>
           <li><Link to="/previous-orders">Previous Orders</Link></li>
         </ul>
         <input type="button" onClick={this.handleLogout} value="Logout" />
