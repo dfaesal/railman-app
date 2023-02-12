@@ -33,7 +33,7 @@
         "Burger"
       ],
       "total": 125,
-      "status": "accepted"
+      "status": "pending"
     },
     {
       "id": 2,
@@ -166,6 +166,14 @@
       "name": "Subway",
       "cuisine": [],
       "rating": 4
+    },
+    {
+      "id": 6,
+      "pnr": "12345",
+      "location": "pune",
+      "name": "BiryaniHut",
+      "cuisine": [],
+      "rating": 4.2
     }
   ],
   "menuItems": {

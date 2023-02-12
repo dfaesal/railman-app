@@ -42,7 +42,7 @@ class Order extends React.Component {
       "restaurant": restaurant,
       "total": this.state.orderTotal,
       "orderItems": orderItems,
-      "status": "accepted"
+      "status": "pending"
     };
     axios.post("http://localhost:8000/api/orders", orders)
       .then((response) => {
