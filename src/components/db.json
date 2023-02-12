@@ -169,7 +169,7 @@
         "Garlic Knots",
         "Wings"
       ],
-      "status": "accepted"
+      "status": "delivered"
     },
     {
       "id": 12,
@@ -181,7 +181,7 @@
         "Big Mac",
         "French Fries"
       ],
-      "status": "pending"
+      "status": "delivered"
     }
   ],
   "restaurants": [
@@ -318,6 +318,23 @@
         "id": 15,
         "name": "Wings",
         "price": 20
+      }
+    ],
+    "BiryaniHut": [
+      {
+        "id": 16,
+        "name": "Biryani",
+        "price": 430
+      },
+      {
+        "id": 17,
+        "name": "Tandoori Chicken",
+        "price": 300
+      },
+      {
+        "id": 17,
+        "name": "Fried Chicken",
+        "price": 250
       }
     ]
   }
