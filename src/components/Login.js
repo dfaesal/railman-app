@@ -73,10 +73,10 @@ class Login extends React.Component {
     axios.get(apiBaseUrl + 'login?email=' + payload.email)
       .then(function (response) {
         self.setState({users:response.data});
-        setUserSession(response.data[0].id, response.data[0].name);
-        if (response.status === 200) {
+        if (response.status === 200 && response.data.length > 0) {
           if(payload.role === response.data[0].role)
           {
+            setUserSession(response.data[0].id, response.data[0].name);
             alert("Login successfull");
             if (payload.role === "customer") {
               props.history.push('/customer-dashboard');          

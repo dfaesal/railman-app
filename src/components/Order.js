@@ -36,9 +36,10 @@ class Order extends React.Component {
     const url = window.location.href.split("/");
     const restaurant = url[url.length - 2];
     const orderItems = this.state.orderItems.map(item => item.name);
+    const customerName = getUser().name;
     const orders = {
       "id": this.state.lastIndex,
-      "customerName": getUser().name,
+      "customerName": customerName,
       "restaurant": restaurant,
       "total": this.state.orderTotal,
       "orderItems": orderItems,
